@@ -42,6 +42,6 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
       }
     </style>
   </template>
-</dom-module>`;
+  </dom-module>`;
 
 document.head.appendChild($_documentContainer.content);

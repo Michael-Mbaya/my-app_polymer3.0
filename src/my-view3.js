@@ -11,6 +11,7 @@
 import { PolymerElement } from '@polymer/polymer/polymer-element.js';
 import { LitElement, html } from 'lit-element';
 import './shared-styles.js';
+// import 'bulma/css/bulma.css';
 
 class MyView3 extends LitElement {
     render() {
