@@ -8,12 +8,14 @@
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
 
-import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+import { PolymerElement } from '@polymer/polymer/polymer-element.js';
+import { LitElement, html } from 'lit-element';
+
 import './shared-styles.js';
 
-class MyView2 extends PolymerElement {
-  static get template() {
-    return html`
+class MyView2 extends LitElement {
+    render() {
+        return html `
       <style include="shared-styles">
         :host {
           display: block;
@@ -29,7 +31,8 @@ class MyView2 extends PolymerElement {
         <p>Id nam odio natum malorum, tibique copiosae expetenda mel ea.Detracto suavitate repudiandae no eum. Id adhuc minim soluta nam.Id nam odio natum malorum, tibique copiosae expetenda mel ea.</p>
       </div>
     `;
-  }
+    }
 }
 
-window.customElements.define('my-view2', MyView2);
+// window.customElements.define('my-view2', MyView2);
+customElements.define('my-view2', MyView2);

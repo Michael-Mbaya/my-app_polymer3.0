@@ -8,12 +8,14 @@
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
 
-import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+import { PolymerElement } from '@polymer/polymer/polymer-element.js';
+import { LitElement, html } from 'lit-element';
 import './shared-styles.js';
 
-class MyView1 extends PolymerElement {
-  static get template() {
-    return html`
+class MyView1 extends LitElement {
+
+    render() {
+        return html `
       <style include="shared-styles">
         :host {
           display: block;
@@ -29,7 +31,9 @@ class MyView1 extends PolymerElement {
         <p>Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Lorem ipsum dolor sit amet, per in nusquam nominavi periculis, sit elit oportere ea.Cu mei vide viris gloriatur, at populo eripuit sit.</p>
       </div>
     `;
-  }
+    }
+
 }
 
-window.customElements.define('my-view1', MyView1);
+customElements.define('my-view1', MyView1);
+// window.customElements.define('my-view1', MyView1);
